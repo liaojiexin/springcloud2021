@@ -14,4 +14,4 @@ spring:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   #统一实体类放在com.liaojiexin.entity下面，这样mapper.xml文件中的parameterType和resultType可以直接写实体类的名称，不用加上前面的com.liaojiexin.entity
-  typeAliasesPackage: com.liaojiexin.entity
+  typeAliasesPackage: com.liaojiexin.springcloud.entity
