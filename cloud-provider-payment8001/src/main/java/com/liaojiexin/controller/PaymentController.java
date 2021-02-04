@@ -39,7 +39,7 @@ public class PaymentController {
     @RequestMapping(value = "/springcloud/payment/select/{id}",method = RequestMethod.GET)
     public CommonResult selcet(@PathVariable("id") Long id){
         Payment payment=paymentService.selectByPrimaryKey(id);
-        log.info(payment.toString());
+//        log.info(payment.toString());
         if (payment!=null){
             return new CommonResult(0,"查询成功",payment);
         }else{
