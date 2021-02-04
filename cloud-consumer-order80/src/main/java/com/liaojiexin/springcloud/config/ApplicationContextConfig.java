@@ -1,4 +1,4 @@
-package com.liaojiexin.config;
+package com.liaojiexin.springcloud.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

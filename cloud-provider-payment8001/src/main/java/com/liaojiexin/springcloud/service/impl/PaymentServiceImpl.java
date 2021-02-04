@@ -1,8 +1,8 @@
-package com.liaojiexin.service.impl;
+package com.liaojiexin.springcloud.service.impl;
 
-import com.liaojiexin.dao.PaymentMapper;
-import com.liaojiexin.entity.Payment;
-import com.liaojiexin.service.PaymentService;
+import com.liaojiexin.springcloud.dao.PaymentMapper;
+import com.liaojiexin.springcloud.entity.Payment;
+import com.liaojiexin.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

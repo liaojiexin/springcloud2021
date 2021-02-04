@@ -1,7 +1,7 @@
-package com.liaojiexin.controller;
+package com.liaojiexin.springcloud.controller;
 
-import com.liaojiexin.entity.CommonResult;
-import com.liaojiexin.entity.Payment;
+import com.liaojiexin.springcloud.entity.CommonResult;
+import com.liaojiexin.springcloud.entity.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

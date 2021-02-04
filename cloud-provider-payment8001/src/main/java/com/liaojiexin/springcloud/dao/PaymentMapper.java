@@ -1,6 +1,6 @@
-package com.liaojiexin.dao;
+package com.liaojiexin.springcloud.dao;
 
-import com.liaojiexin.entity.Payment;
+import com.liaojiexin.springcloud.entity.Payment;
 
 public interface PaymentMapper {
     int deleteByPrimaryKey(Long id);

@@ -1,6 +1,6 @@
-package com.liaojiexin.service;
+package com.liaojiexin.springcloud.service;
 
-import com.liaojiexin.entity.Payment;
+import com.liaojiexin.springcloud.entity.Payment;
 
 /**
  * @ClassName: PaymentService
