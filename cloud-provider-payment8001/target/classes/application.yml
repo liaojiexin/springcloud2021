@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包
+    url: jdbc:mysql://www.liaojiexin.top:3306/springcloud2021?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  #统一实体类放在com.liaojiexin.entity下面，这样mapper.xml文件中的parameterType和resultType可以直接写实体类的名称，不用加上前面的com.liaojiexin.entity
+  typeAliasesPackage: com.liaojiexin.entity

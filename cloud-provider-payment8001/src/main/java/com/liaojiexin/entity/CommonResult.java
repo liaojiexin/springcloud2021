@@ -19,6 +19,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class CommonResult<T> implements Serializable {
 
+    private static final Integer CODE_SUCCESS = 0;
+
+    private static final Integer CODE_ERROR = -1;
+
     private Integer code;
 
     private String message;
@@ -27,5 +31,13 @@ public class CommonResult<T> implements Serializable {
 
     public CommonResult(Integer code,String message){
         this(code,message,null);
+    }
+
+    public static CommonResult ok(){
+        return new CommonResult(CODE_SUCCESS,"操作成功",null);
+    }
+
+    public static CommonResult error(){
+        return new CommonResult(CODE_ERROR,"操作失败",null);
     }
 }
