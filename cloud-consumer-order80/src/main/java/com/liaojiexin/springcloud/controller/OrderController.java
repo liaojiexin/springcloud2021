@@ -23,11 +23,13 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
+    //新建订单
     @RequestMapping(value = "/springcloud/consumer/payment/create",method = RequestMethod.POST)
     public CommonResult<Payment> create(@RequestBody Payment payment){
         return  restTemplate.postForObject(PAYMENT_URL+"/springcloud/payment/create",payment,CommonResult.class);
     }
 
+    //查询订单
     @RequestMapping(value = "/springcloud/consumer/payment/select/{id}",method = RequestMethod.GET)
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id){
         return restTemplate.getForObject(PAYMENT_URL+"/springcloud/payment/select/"+id,CommonResult.class);
