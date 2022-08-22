@@ -37,6 +37,10 @@ public class CommonResult<T> implements Serializable {
         return new CommonResult(CODE_SUCCESS,"操作成功",null);
     }
 
+    public CommonResult ok(String message, T data){
+        return new CommonResult(CODE_SUCCESS,message,data);
+    }
+
     public static CommonResult error(){
         return new CommonResult(CODE_ERROR,"操作失败",null);
     }
