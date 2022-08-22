@@ -5,9 +5,12 @@ import com.liaojiexin.springcloud.entity.Payment;
 import com.liaojiexin.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @ClassName: PaymentController
@@ -50,4 +53,28 @@ public class PaymentController {
             return new CommonResult(-1,"没有查询到相关记录");
         }
     }
+
+    //------服务发现--------
+    //+++++++++++++++++++++++++++++++++
+    @Resource
+    private DiscoveryClient discoveryClient;
+
+    @RequestMapping(value = "/springcloud/payment/discovery")
+    public CommonResult<DiscoveryClient> discoveryServer(){
+        //获取注册中心的所有服务
+        List<String> services=discoveryClient.getServices();
+        for (String service:services) {
+            log.info("获取到服务，服务名称为："+service);
+        }
+
+        //获取服务名称为cloud-payment-service的所有集群
+        List<ServiceInstance> instances=discoveryClient.getInstances("cloud-payment-service");
+        for (ServiceInstance instance:instances) {
+            log.info("获取服务cloud-payment-service集群中的其中一个;ip:"+instance.getHost()+";port:"+instance.getPort()+";url:"+instance.getUri());
+        }
+
+        return new CommonResult<>(0,"查询成功",this.discoveryClient);
+    }
+
+    //---------------------------------
 }

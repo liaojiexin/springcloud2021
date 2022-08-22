@@ -37,4 +37,10 @@ public class OrderController {
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id){
         return restTemplate.getForObject(PAYMENT_URL+"/springcloud/payment/select/"+id,CommonResult.class);
     }
+
+    //服务发现
+    @RequestMapping(value = "/springcloud/consumer/payment/discovery",method = RequestMethod.GET)
+    public CommonResult<Object> getPayment(){
+        return restTemplate.getForObject(PAYMENT_URL+"/springcloud/payment/discovery",CommonResult.class);
+    }
 }
