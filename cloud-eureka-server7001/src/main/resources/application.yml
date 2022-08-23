@@ -11,5 +11,10 @@ eureka:
       #集群指向其它eureka
       defaultZone: http://www.eureka7002.com:7002/eureka/
       #单机就是指向自己
-#      defaultZone: http://localhost:7001/eureka/
-#      defaultZone: http://www.eureka7001.com:7002/eureka/
+      #defaultZone: http://localhost:7001/eureka/
+      #defaultZone: http://www.eureka7001.com:7002/eureka/
+  server:
+    #关闭自我保护机制，默认是打开的
+    #enable-self-preservation: true
+    #设置心跳超时时间，就剔除服务。即服务端每2秒检查一次是否有心跳，单位为毫秒
+    #eviction-interval-timer-in-ms: 2000
