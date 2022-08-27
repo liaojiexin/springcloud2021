@@ -1,8 +1,10 @@
 package com.liaojiexin.springcloud;
 
+import com.liaojiexin.ribbo.MyRibbonRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 /**
  * @ClassName: OrderAppliacion
@@ -13,6 +15,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @EnableEurekaClient
 @SpringBootApplication
+//这里启动自定义Ribbon负载均衡决策,name为Eureka中的注册的服务名，configuration为自定义的实现类
+@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MyRibbonRule.class)
 public class Order80Appliacion {
 
     public static void main(String[] args) {
