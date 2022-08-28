@@ -15,7 +15,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  */
 @EnableEurekaClient
 @SpringBootApplication
-//这里启动自定义Ribbon负载均衡决策,name为Eureka中的注册的服务名，configuration为自定义的实现类
+//这里启动自定义Ribbon负载均衡决策,name为Eureka中的注册的服务名（注意区分大小写），configuration为自定义的实现类
 @RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MyRibbonRule.class)
 public class Order80Appliacion {
 
