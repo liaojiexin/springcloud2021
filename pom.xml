@@ -24,6 +24,8 @@
     <!--  8006为Consul  -->
     <module>cloud-provider-payment8006</module>
     <module>cloud-consumercs-order80</module>
+    <!-- openfeign   -->
+    <module>cloud-consumer-feign-order80</module>
   </modules>
 
   <name>Maven</name>
