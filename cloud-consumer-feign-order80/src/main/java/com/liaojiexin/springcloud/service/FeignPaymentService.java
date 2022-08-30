@@ -28,4 +28,6 @@ public interface FeignPaymentService {
     /** 根据id查询支付记录*/
     @RequestMapping(value = "/springcloud/payment/select/{id}",method = RequestMethod.GET)
     CommonResult selcet(@PathVariable("id") Long id);
+
+
 }

@@ -1,5 +1,5 @@
-/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8001/src/main/java/com/liaojiexin/springcloud/dao/PaymentMapper.java
-/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8001/src/main/java/com/liaojiexin/springcloud/service/impl/PaymentServiceImpl.java
-/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8001/src/main/java/com/liaojiexin/springcloud/service/PaymentService.java
-/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8001/src/main/java/com/liaojiexin/springcloud/controller/PaymentController.java
-/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8001/src/main/java/com/liaojiexin/springcloud/Payment8001Application.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8002/src/main/java/com/liaojiexin/springcloud/controller/PaymentController.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8002/src/main/java/com/liaojiexin/springcloud/Payment8002Application.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8002/src/main/java/com/liaojiexin/springcloud/service/PaymentService.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8002/src/main/java/com/liaojiexin/springcloud/dao/PaymentMapper.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-provider-payment8002/src/main/java/com/liaojiexin/springcloud/service/impl/PaymentServiceImpl.java

@@ -1,3 +1,4 @@
-com/liaojiexin/springcloud/config/ApplicationContextConfig.class
-com/liaojiexin/springcloud/Order80Appliacion.class
+com/liaojiexin/springcloud/OrderFeign80Appliacion.class
+com/liaojiexin/springcloud/service/FeignPaymentService.class
+com/liaojiexin/springcloud/config/FeignConfig.class
 com/liaojiexin/springcloud/controller/OrderController.class

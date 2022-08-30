@@ -2,4 +2,4 @@ com/liaojiexin/springcloud/dao/PaymentMapper.class
 com/liaojiexin/springcloud/controller/PaymentController.class
 com/liaojiexin/springcloud/service/impl/PaymentServiceImpl.class
 com/liaojiexin/springcloud/service/PaymentService.class
-com/liaojiexin/springcloud/Payment8001Application.class
+com/liaojiexin/springcloud/Payment8002Application.class
