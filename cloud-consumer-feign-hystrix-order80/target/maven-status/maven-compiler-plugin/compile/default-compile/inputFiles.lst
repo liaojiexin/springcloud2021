@@ -1,0 +1,4 @@
+/Users/liao/IdeaProjects/springcloud2021/cloud-consumer-feign-hystrix-order80/src/main/java/com/liaojiexin/springcloud/config/FeignConfig.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-consumer-feign-hystrix-order80/src/main/java/com/liaojiexin/springcloud/controller/OrderController.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-consumer-feign-hystrix-order80/src/main/java/com/liaojiexin/springcloud/service/FeignPaymentService.java
+/Users/liao/IdeaProjects/springcloud2021/cloud-consumer-feign-hystrix-order80/src/main/java/com/liaojiexin/springcloud/OrderFeignHystrix80Appliacion.java
