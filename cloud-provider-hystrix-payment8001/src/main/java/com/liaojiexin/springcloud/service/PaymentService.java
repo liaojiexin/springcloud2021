@@ -15,4 +15,6 @@ public interface PaymentService {
 
 
     String payment_timeout(Integer id);
+
+    String paymentCircuitBreaker(Integer id);
 }
