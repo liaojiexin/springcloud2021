@@ -20,6 +20,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public String payment_ok(Integer id) {
+        int i=10/0;
         String result="线程池："+Thread.currentThread().getName()+";接口payment_ok,id:"+id;
         System.out.println(result);
         return result;

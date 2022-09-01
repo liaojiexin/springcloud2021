@@ -35,3 +35,8 @@ logging:
 hystrix:
   metrics:
     enabled: true
+
+feign:
+  hystrix:
+    #开启feign兼容hystrix
+    enabled: true
