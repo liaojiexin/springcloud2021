@@ -16,5 +16,11 @@ cloud-comsumerzk-order80/cloud-provider-payment8004:为Zookeeper的消费者和�
 
 cloud-consumercs-order80/cloud-provider-payment8006:为Consul的消费者和提供者
 
+cloud-consumer-feign-order80:为OpenFeign的消费者
+
+cloud-consumer-feign-hystrix-order80/cloud-provider-hystrix-payment8001：为Hystrix的消费者和服务提供者
+
+cloud-consumer-hystrix-dashboard9001：为Hystrix服务监控
+
 
 
