@@ -12,7 +12,6 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
     <dependencies>
-        <!--eureka client 2020后用这个版本-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -73,6 +72,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <!--eureka client 2020后用这个版本-->
 
     <!-- mybatis generator 自动生成代码插件 -->
     <build>

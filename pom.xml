@@ -32,6 +32,8 @@
     <module>cloud-consumer-hystrix-dashboard9001</module>
     <!--  gateway  -->
     <module>cloud-gateway-gateway9527</module>
+    <!-- config   -->
+    <module>cloud-config-center3344</module>
   </modules>
 
   <name>Maven</name>
