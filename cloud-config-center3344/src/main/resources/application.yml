@@ -8,9 +8,13 @@ spring:
       server:
         git:
           #配置的github地址
-          uri: https://github.com/liaojiexin/springcloud-config-center.git
+          #uri: https://github.com/liaojiexin/springcloud-config-center.git
+          #这里换成gitee地址，因为github经常连不上,记得公开，ssh的要配密钥
+          uri: https://gitee.com/liaojiexin/springcloud-config-center.git
           #搜索目录
-          search-paths: springcloud-config-center
+          search-paths:
+            - springcloud-config-center
+          #skip-ssl-validation: true
       #读取的分支
       label: master
 
