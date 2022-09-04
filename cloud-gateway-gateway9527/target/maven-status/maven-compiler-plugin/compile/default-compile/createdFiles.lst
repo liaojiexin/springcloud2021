@@ -1,0 +1,4 @@
+com/liaojiexin/springcloud/SpringcloudApplication.class
+com/liaojiexin/springcloud/filter/MyLogGlobalFilter.class
+com/liaojiexin/springcloud/config/GateWayConfig.class
+com/liaojiexin/springcloud/GateWay9527Application.class
