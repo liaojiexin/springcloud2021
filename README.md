@@ -22,5 +22,5 @@ cloud-consumer-feign-hystrix-order80/cloud-provider-hystrix-payment8001：为Hys
 
 cloud-consumer-hystrix-dashboard9001：为Hystrix服务监控
 
-
+cloud-gateway-gateway9527:为GateWay网关服务
 
