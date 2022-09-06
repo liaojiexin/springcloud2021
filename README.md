@@ -24,3 +24,4 @@ cloud-consumer-hystrix-dashboard9001：为Hystrix服务监控
 
 cloud-gateway-gateway9527:为GateWay网关服务
 
+cloud-config-center3344/cloud-config-client3355:为config的客户端和服务端，springcloud-config-center为配置仓库，连接github/gitee
