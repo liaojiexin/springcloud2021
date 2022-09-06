@@ -1,22 +1,16 @@
 server:
-  port: 3344
+  port: 3355
 spring:
   application:
-    name: cloud-config-center
+    name: cloud-config-client
   cloud:
+    #config客户端配置
     config:
-      server:
-        git:
-          #配置的github地址
-          #uri: https://github.com/liaojiexin/springcloud-config-center.git
-          #这里换成gitee地址，因为github经常连不上,记得公开，ssh的要配密钥
-          uri: https://gitee.com/liaojiexin/springcloud-config-center.git
-          #搜索目录
-          search-paths:
-            - springcloud-config-center
-          #skip-ssl-validation: true
-      #读取的分支
-      label: master
+      #下述3个配置：master分支上application-dev.ymL的配置文件放读取http://localhost:3344/master/application-dev.yml
+      label: master #分支名称
+      name: application #配置文件名称
+      profile: dev  #读取后缀名称
+      uri: http://localhost:3344  #配置中心(服务端)的地址
 
 eureka:
   client:
