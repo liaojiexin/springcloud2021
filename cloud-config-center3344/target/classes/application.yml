@@ -17,6 +17,12 @@ spring:
           #skip-ssl-validation: true
       #读取的分支
       label: master
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
@@ -28,3 +34,11 @@ eureka:
       #defaultZone: http://localhost:7001/eureka
       #加入eureka集群
       defaultZone: http://www.eureka7001.com:7001/eureka,http://www.eureka7002.com:7002/eureka
+
+#rabbitmq相关配置
+management:
+  #暴露bus刷新配置的端点
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
