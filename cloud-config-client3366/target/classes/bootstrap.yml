@@ -1,23 +1,16 @@
 server:
-  port: 3344
+  port: 3366
 spring:
   application:
-    name: cloud-config-center
+    name: cloud-config-client
   cloud:
+    #config客户端配置
     config:
-      server:
-        git:
-          #配置的github地址
-          #uri: https://github.com/liaojiexin/springcloud-config-center.git
-          #这里换成gitee地址，因为github经常连不上,记得公开，ssh的要配密钥
-          uri: https://gitee.com/liaojiexin/springcloud-config-center.git
-          #搜索目录
-          search-paths:
-            - springcloud-config-center
-          #skip-ssl-validation: true
-      #读取的分支
-      label: master
-  #rabbitmq配置
+      #下述3个配置：master分支上application-dev.ymL的配置文件放读取http://localhost:3344/master/application-dev.yml
+      label: master #分支名称
+      name: application #配置文件名称
+      profile: dev  #读取后缀名称
+      uri: http://localhost:3344  #配置中心(服务端)的地址
   rabbitmq:
     host: localhost
     port: 5672
@@ -35,10 +28,9 @@ eureka:
       #加入eureka集群
       defaultZone: http://www.eureka7001.com:7001/eureka,http://www.eureka7002.com:7002/eureka
 
-#rabbitmq相关配置
+# 暴露监控端点
 management:
-  #暴露bus刷新配置的端点
   endpoints:
     web:
       exposure:
-        include: 'bus-refresh'
+        include: "*"

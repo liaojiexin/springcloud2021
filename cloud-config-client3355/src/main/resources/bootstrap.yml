@@ -11,6 +11,11 @@ spring:
       name: application #配置文件名称
       profile: dev  #读取后缀名称
       uri: http://localhost:3344  #配置中心(服务端)的地址
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
