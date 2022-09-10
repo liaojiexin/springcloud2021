@@ -37,6 +37,10 @@
     <module>cloud-config-client3355</module>
     <!-- bus   -->
     <module>cloud-config-client3366</module>
+    <!--  stream  -->
+    <module>cloud-stream-rabbitmq-provider8801</module>
+    <module>cloud-stream-rabbitmq-consumer8802</module>
+    <module>cloud-stream-rabbitmq-consumer8803</module>
   </modules>
 
   <name>Maven</name>
