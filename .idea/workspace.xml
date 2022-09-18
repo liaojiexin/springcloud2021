@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fa47b3-254d-4049-a204-61874a1a9079" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/cloudalibaba-consumer-nacos-order83.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/liaojiexin/springcloud/NacosConsumer83Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/liaojiexin/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/liaojiexin/springcloud/controller/OrderNacosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/cloudalibaba-config-nacos-client3377.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/liaojiexin/springcloud/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/cloud-stream-rabbitmq-consumer8802.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/cloud-stream-rabbitmq-consumer8802.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,6 +181,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NacosConfigClient3377Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-config-nacos-client3377" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liaojiexin.springcloud.NacosConfigClient3377Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NacosConsumer83Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloudalibaba-consumer-nacos-order83" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.liaojiexin.springcloud.NacosConsumer83Application" />
@@ -332,6 +332,7 @@
       <item itemvalue="Spring Boot.GateWay9527Application" />
       <item itemvalue="Spring Boot.NacosProvider9002Application" />
       <item itemvalue="Spring Boot.NacosConsumer83Application" />
+      <item itemvalue="Spring Boot.NacosConfigClient3377Application" />
     </list>
     <recent_temporary>
       <list>
@@ -388,7 +389,7 @@
       <workItem from="1662946911750" duration="3693000" />
       <workItem from="1663075249689" duration="3303000" />
       <workItem from="1663162615969" duration="757000" />
-      <workItem from="1663463493064" duration="8456000" />
+      <workItem from="1663463493064" duration="10931000" />
     </task>
     <task id="LOCAL-00001" summary="修改配置">
       <created>1660966672992</created>
@@ -614,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663487832430</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="nacos服务消费者">
+      <created>1663507931467</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1663507931467</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +671,8 @@
     <MESSAGE value="stream" />
     <MESSAGE value="sleuth" />
     <MESSAGE value="nacos服务提供者" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacos服务提供者" />
+    <MESSAGE value="nacos服务消费者" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacos服务消费者" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
