@@ -29,3 +29,4 @@ cloud-config-center3344/cloud-config-client3355:为config的客户端和服务�
 cloud-config-center3344/cloud-config-client3355/cloud-config-client3366/springcloud-config-center:为Config+Bus做配置中心+消息总线
 
 cloud-stream-rabbitmq-provider8801/cloud-stream-rabbitmq-consumer8802/cloud-stream-rabbitmq-consumer8803:为Stream的消息生产者和消费者
+

@@ -5,6 +5,13 @@ spring:
   application:
     # 这里的name是注册到eureka中的一个标志，写好后不要随便改，其他服务通过这个名称来找该服务
     name: cloud-order-server
+  zipkin:
+    #配置zipkin地址
+    base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        #采样率值介于0到1之间，1则表示全部采样
+        probability: 1
 
 eureka:
   client:
