@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/pom.xml" />
         <option value="$PROJECT_DIR$/cloudalibaba-provider-payment9001/pom.xml" />
         <option value="$PROJECT_DIR$/cloudalibaba-provider-payment9002/pom.xml" />
+        <option value="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/pom.xml" />
       </list>
     </option>
   </component>
