@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45fa47b3-254d-4049-a204-61874a1a9079" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/cloudalibaba-config-nacos-client3377.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/liaojiexin/springcloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="45fa47b3-254d-4049-a204-61874a1a9079" name="默认变更列表" comment="nacos配置管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,18 +84,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GateWay9527Application">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.NacosConfigClient3377Application">
     <configuration name="CloudApiCommonsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-api-commons" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.liaojiexin.springcloud.CloudApiCommonsApplication" />
@@ -329,10 +312,10 @@
       <item itemvalue="Spring Boot.StreamRabbitmq8802Application" />
       <item itemvalue="Spring Boot.StreamRabbitmq8803Application" />
       <item itemvalue="Spring Boot.NacosProvider9001Application" />
-      <item itemvalue="Spring Boot.GateWay9527Application" />
       <item itemvalue="Spring Boot.NacosProvider9002Application" />
       <item itemvalue="Spring Boot.NacosConsumer83Application" />
       <item itemvalue="Spring Boot.NacosConfigClient3377Application" />
+      <item itemvalue="Spring Boot.GateWay9527Application" />
     </list>
     <recent_temporary>
       <list>
@@ -389,7 +372,8 @@
       <workItem from="1662946911750" duration="3693000" />
       <workItem from="1663075249689" duration="3303000" />
       <workItem from="1663162615969" duration="757000" />
-      <workItem from="1663463493064" duration="10931000" />
+      <workItem from="1663463493064" duration="11587000" />
+      <workItem from="1663594604409" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="修改配置">
       <created>1660966672992</created>
@@ -622,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663507931467</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="nacos配置管理">
+      <created>1663510782227</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1663510782228</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +663,8 @@
     <MESSAGE value="sleuth" />
     <MESSAGE value="nacos服务提供者" />
     <MESSAGE value="nacos服务消费者" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacos服务消费者" />
+    <MESSAGE value="nacos配置管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacos配置管理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

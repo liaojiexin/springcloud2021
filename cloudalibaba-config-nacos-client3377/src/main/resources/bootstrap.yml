@@ -13,6 +13,10 @@ spring:
         server-addr: localhost:8848
         #指定yaml格式的配置
         file-extension: yaml
+        #表示使用哪个分组
+        group: DEV_GROUP
+        #命名空间id
+        namespace: 4b38221d-a4d3-4ac0-b60d-dd8ec16d87a3
 
 #上面的配置可以即表示去配置中心找下面这个组合起来的文件名，${spring.profile.active)配置在appliaction.yml里面
 # ${spring.application.name)-${spring.profile.active).${spring.cloud.nacos.config.file-extension}
