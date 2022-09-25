@@ -32,6 +32,7 @@
         <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="cloud-consumercs-order80" />
         <module name="cloud-consumer-order80" />
+        <module name="cloudalibaba-sentinel-service8401" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -64,6 +65,8 @@
       <module name="cloudalibaba-consumer-nacos-order83" target="1.8" />
       <module name="cloudalibaba-provider-payment9001" target="1.8" />
       <module name="cloudalibaba-provider-payment9002" target="1.8" />
+      <module name="cloudalibaba-sentinel-service8401" target="1.8" />
+      <module name="sentinel-dashboard" target="1.5" />
       <module name="springcloud2021" target="1.8" />
     </bytecodeTargetLevel>
   </component>
