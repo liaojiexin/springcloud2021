@@ -16,3 +16,8 @@ spring:
         dashboard: localhost:84
         #通讯-监听，默认8719端口，假如端口被占用自动从8719依次+1扫描
         port: 8719
+
+#激活sentinel对feign的支持
+feign:
+  sentinel:
+    enabled: true

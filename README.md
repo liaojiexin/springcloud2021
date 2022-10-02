@@ -32,3 +32,4 @@ cloud-stream-rabbitmq-provider8801/cloud-stream-rabbitmq-consumer8802/cloud-stre
 
 cloudalibaba-provider-payment9001/cloudalibaba-provider-payment9002/cloudalibaba-consumer-nacos-order83：为nacos的服务提供者和消费者
 
+cloidalibaba-sentinel-service8401为sentinel服务的客户端
