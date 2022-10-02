@@ -1,13 +1,9 @@
 package com.liaojiexin.springcloud.entity;
 
-public class Order {
+public class Account {
     private Integer id;
 
     private String userId;
-
-    private String commodityCode;
-
-    private Integer count;
 
     private Integer money;
 
@@ -25,22 +21,6 @@ public class Order {
 
     public void setUserId(String userId) {
         this.userId = userId == null ? null : userId.trim();
-    }
-
-    public String getCommodityCode() {
-        return commodityCode;
-    }
-
-    public void setCommodityCode(String commodityCode) {
-        this.commodityCode = commodityCode == null ? null : commodityCode.trim();
-    }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
     }
 
     public Integer getMoney() {
