@@ -1,7 +1,9 @@
 package com.liaojiexin.springcloud.dao;
 
 import com.liaojiexin.springcloud.entity.Storage;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface StorageMapper {
     int deleteByPrimaryKey(Integer id);
 
