@@ -21,6 +21,11 @@ public class AccountController {
 
     @RequestMapping(value = "/account/update")
     public CommonResult update(Account account){
+        Integer id=account.getId();
+        Integer money=account.getMoney();
+        String userId = account.getUserId();
+        account=accountMapper.selectByPrimaryKey(id);
+        account.setMoney(account.getMoney()-money);
         accountMapper.updateByPrimaryKeySelective(account);
         return CommonResult.ok();
     }

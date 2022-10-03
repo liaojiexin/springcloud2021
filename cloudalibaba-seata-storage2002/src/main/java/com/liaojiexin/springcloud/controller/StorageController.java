@@ -21,6 +21,10 @@ public class StorageController {
 
     @RequestMapping(value = "/storage/update")
     public CommonResult update(Storage storage){
+        Integer id=storage.getId();
+        Integer count=storage.getCount();
+        storage=storageMapper.selectByPrimaryKey(id);
+        storage.setCount(storage.getCount()-count);
         storageMapper.updateByPrimaryKeySelective(storage);
         return CommonResult.ok();
     }

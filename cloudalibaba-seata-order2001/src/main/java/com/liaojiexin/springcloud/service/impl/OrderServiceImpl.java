@@ -32,19 +32,24 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Order create(Order order) {
         //1、下订单
+        order.setCommodityCode("订单未完成");
         orderMapper.insertSelective(order);
 
         //2、减库存
         Storage storage=new Storage();
         storage.setId(1);
-        storage.setCount(10);
+        storage.setCount(order.getCount());
         storageService.update(storage);
 
         //3、扣余额
         Account account=new Account();
+        account.setId(1);
+        account.setMoney(order.getMoney());
+        account.setUserId("user1");
         accountService.update(account);
 
         //4、修改订单
+        order.setCommodityCode("订单完成");
         orderMapper.updateByPrimaryKey(order);
 
         return order;
