@@ -4,6 +4,7 @@ import com.liaojiexin.springcloud.dao.AccountMapper;
 import com.liaojiexin.springcloud.entity.Account;
 import com.liaojiexin.springcloud.entity.CommonResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class AccountController {
     private AccountMapper accountMapper;
 
     @RequestMapping(value = "/account/update")
-    public CommonResult update(Account account){
+    public CommonResult update(@RequestBody Account account){
         Integer id=account.getId();
         Integer money=account.getMoney();
         String userId = account.getUserId();

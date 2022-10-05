@@ -4,6 +4,7 @@ import com.liaojiexin.springcloud.entity.CommonResult;
 import com.liaojiexin.springcloud.entity.Storage;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -17,5 +18,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface StorageService {
 
     @RequestMapping(value = "/storage/update")
-    CommonResult update(Storage storage);
+    CommonResult update(@RequestBody Storage storage);
 }
