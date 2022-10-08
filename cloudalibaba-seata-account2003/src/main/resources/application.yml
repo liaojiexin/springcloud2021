@@ -17,6 +17,9 @@ spring:
         server-addr: localhost:8848
         #nginx代理集群的地址
         #server-addr: localhost:8080
+    alibaba:
+      seata:
+        tx-service-group: default
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml

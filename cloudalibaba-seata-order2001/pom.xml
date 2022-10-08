@@ -23,10 +23,14 @@
         </dependency>
         <!--   seata     -->
         <!--   https://seata.io/zh-cn/docs/ops/deploy-guide-beginner.html     -->
-        <!--<dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
             <exclusions>
+                <exclusion>
+                    <groupId>io.seata</groupId>
+                    <artifactId>seata-all</artifactId>
+                </exclusion>
                 <exclusion>
                     <groupId>io.seata</groupId>
                     <artifactId>seata-spring-boot-starter</artifactId>
@@ -38,12 +42,12 @@
             <artifactId>seata-spring-boot-starter</artifactId>
             <version>1.5.2</version>
         </dependency>
-        &lt;!&ndash;  对应使用的seata-server版本      &ndash;&gt;
+        <!--  对应使用的seata-server版本      -->
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-all</artifactId>
             <version>1.5.2</version>
-        </dependency>-->
+        </dependency>
         <!--   openfeign     -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

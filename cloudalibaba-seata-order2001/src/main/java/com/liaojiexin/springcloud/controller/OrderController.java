@@ -3,6 +3,7 @@ package com.liaojiexin.springcloud.controller;
 import com.liaojiexin.springcloud.entity.CommonResult;
 import com.liaojiexin.springcloud.entity.Order;
 import com.liaojiexin.springcloud.service.OrderService;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,7 @@ public class OrderController {
      * @return
      */
     @RequestMapping(method = {RequestMethod.GET,RequestMethod.POST},value = "/order/create")
+    @GlobalTransactional
     public CommonResult create(@RequestBody Order order){
         orderService.create(order);
         return CommonResult.ok();
